@@ -1,65 +1,76 @@
-Financial Assistant with Google GenAI and 10-K Filings
-This project demonstrates how to build an AI-powered financial assistant that can analyze 10-K filings and answer questions about companies' financial information using Google's Generative AI.
+---
 
-📌 Overview
-This application extracts, processes, and analyzes financial data from SEC 10-K filings to provide intelligent insights and answers to financial queries through a straightforward yet powerful approach:
+# 📊 Financial Assistant with Google GenAI and 10-K Filings
 
-Extract text from PDF documents
-Convert to structured JSON using Google Gemini with few-shot prompting
-Create embeddings with Sentence Transformers
-Store in ChromaDB vector database
-Implement RAG (Retrieval-Augmented Generation) pipeline
-Generate controlled, structured responses through few-shot prompting
+This project demonstrates how to build an **AI-powered financial assistant** that can analyze 10-K filings and answer questions about a company’s financial data using **Google's Generative AI**.
 
-🚀 Features
+---
 
-Text Extraction: Direct extraction from 10-K financial filings in PDF format
-Structured Data Conversion: Transform unstructured text to JSON using few-shot prompting
-Semantic Search: Utilize Sentence Transformers embeddings for accurate information retrieval
-RAG Pipeline: Implementation of Retrieval-Augmented Generation for improved accuracy
-Controlled Output Generation: Produce consistent, structured responses through LLM training
+## 📌 Overview
 
-🛠️ Technical Architecture
+This application extracts, processes, and analyzes financial data from **SEC 10-K filings** to provide intelligent insights and responses through a structured pipeline:
 
-Data Extraction & Processing:
+- 📄 Extract text from PDF documents  
+- 🧠 Convert unstructured text to structured JSON using **Google Gemini** with few-shot prompting  
+- 🔍 Create semantic embeddings with **Sentence Transformers**  
+- 🗂 Store embeddings in **ChromaDB** (a vector database)  
+- 🔁 Implement a **Retrieval-Augmented Generation (RAG)** pipeline  
+- ✍️ Generate structured and controlled responses via **LLM prompting**  
 
-Direct PDF text extraction
-Text preprocessing and cleaning
-Conversion to structured JSON via Gemini models with few-shot prompting
+---
+
+## 🚀 Features
+
+- **Text Extraction**: Pulls raw text directly from 10-K PDF filings  
+- **Structured Data Conversion**: Converts unstructured text into a structured JSON format using few-shot prompts  
+- **Semantic Search**: Uses Sentence Transformers to enable intelligent querying and context-aware retrieval  
+- **RAG Pipeline**: Implements a Retrieval-Augmented Generation framework for contextual, relevant responses  
+- **Controlled Generation**: Ensures responses are structured, consistent, and relevant through prompt engineering
+
+---
+
+## 🛠️ Technical Architecture
+
+### 📥 Data Extraction & Processing
+- Direct PDF text extraction using `PyPDF2`
+- Text preprocessing & segmentation
+- Structured conversion using **Google Gemini** + few-shot prompting
+
+### 📐 Embedding & Storage
+- Embedding generation via **Sentence Transformers**
+- Vector storage and similarity search with **ChromaDB**
+
+### 🔁 RAG Implementation
+- Retrieve relevant content using semantic search
+- Integrate context with queries
+- Generate final answers using few-shot prompting and Gemini LLM
+
+---
+
+## 📋 Prerequisites
+
+- **Python** ≥ 3.9  
+- **Google API key** (for Gemini access)  
+- **Required Libraries**:
+  - `sentence-transformers`
+  - `chromadb`
+  - `PyPDF2`
+  - `langchain`
+  - `google api`
 
 
-Embedding & Storage:
+---
 
-Sentence Transformers for generating text embeddings
-ChromaDB for vector storage and similarity search
+## 🔮 Future Work
 
+The broader vision includes:
 
-RAG Implementation:
+- ✅ **LLM Evaluation**: Compare responses against ground truth to assess accuracy and factuality  
+- 📊 **Data Expansion**: Extract a wider range of financial, strategic, and operational data  
+- 🏢 **Multi-Company Support**: Extend parsing to multiple companies and include 10-Q reports  
+- ⚙️ **Agent Pipelines**: Automate data extraction, embedding, and updating using AI agents  
+- 🌐 **Web App**: Develop an interactive dashboard for exploring and querying filings  
+- 🧠 **LLM Benchmarking**: Test models like GPT-4, Gemini, and Claude on financial document understanding tasks  
 
-- Context retrieval from vector database
-- Query enhancement and context integration
-- Response generation using few-shot prompting techniques
+---
 
-
-
-📋 Prerequisites
-
-Python 3.9+
-Google API key for Gemini models
-Libraries: sentence-transformers, chromadb, PyPDF2, etc.
-
-# **5. Future Work**
-
-The broader vision for this project includes:
-
--  Evaluating LLM responses against gold-standard queries and ground truth answers to ensure factuality and reliability.(Immediate)
-
-- Extracting a wide range of financial, strategic, and operational data from filings.
-
-- Supporting multiple companies and parsing both 10-K and 10-Q reports.
-
-- Building pipelines using agents to autonomously extract, embed, and update data.
-
-- Developing a web app with an interactive dashboard for querying and exploring filings.
-
-- Benchmarking various LLMs (e.g., GPT-4, Gemini, Claude) on financial document understanding tasks
