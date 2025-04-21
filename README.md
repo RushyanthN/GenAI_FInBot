@@ -2,7 +2,7 @@
 
 # 📊 Financial Assistant with Google GenAI and 10-K Filings
 
-This project demonstrates how to build an **AI-powered financial assistant** that can analyze 10-K filings and answer questions about a company’s financial data using **Google's Generative AI**.
+This project demonstrates how to build an **AI-powered financial assistant** that analyzes SEC 10-K filings and answers questions about a company’s financial data using **Google's Generative AI (Gemini)**.
 
 > 🔗 **Medium Article**: [From PDF to AI: Building a Financial Assistant with Google GenAI and 10-K Filings](https://medium.com/@rushyanth55/from-pdf-to-ai-building-a-financial-assistant-with-google-genai-and-10-k-filings-f1410d3cc620)  
 > 📺 **YouTube Demo**: [Watch the Demo](https://www.youtube.com/watch?v=goC5lFe9fcQ&t=3s)
