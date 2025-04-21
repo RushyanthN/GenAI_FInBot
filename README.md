@@ -56,7 +56,7 @@ This application extracts, processes, and analyzes financial data from **SEC 10-
   - `chromadb`
   - `PyPDF2`
   - `langchain`
-  - `google api`
+  - `google-generativeai`
 
 
 ---
